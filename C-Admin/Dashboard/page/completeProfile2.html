@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <link rel="stylesheet" href="completeProfile2.css">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css">
+  <!-- CSS only -->
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+<body style="background-color: #f8f9fa;">
+    
+    <div class="container">
+        <div class="profile large">
+          <div class="cover"><img src="perspective-exterior-nobody-empty-box.jpg" style="width: 100%;" id="output"/>
+            <div class="layer">
+              <div class="loader"></div>
+            </div><a class="image-wrapper" href="#">
+              <form id="coverForm" action="#">
+                <input class="hidden-input" id="changeCover" type="file" onchange="loadFile(event)"/>
+                <label class="edit glyphicon glyphicon-pencil" for="changeCover" title="Change cover"></label>
+              </form></a>
+          </div>
+          <div class="user-info">
+            <div class="profile-pic"><img src="mortarboard.png" style="object-fit: cover;" id="output2"/>
+              <div class="layer">
+                <div class="loader"></div>
+              </div><a class="image-wrapper" href="#">
+                <form id="profilePictureForm" action="#">
+                  <input class="hidden-input" id="changePicture" type="file" onchange="loadFile1(event)"/>
+                  <label class="edit glyphicon glyphicon-pencil" for="changePicture" type="file" title="Change picture"></label>
+                </form></a>
+            </div>
+
+           
+              
+
+
+            <div class="username">
+              <div class="name"><span class="verified"></span>@John Doe</div>
+              <div class="about">Frontend developer and coffee lover</div>
+            </div>
+            <div class="progress-container">
+
+                <div id="addhere" style="margin: auto; text-align: center;"></div>
+                
+                <div class="progress-bar" id="progressbar" style="visibility: hidden;">
+                  <div class="js-completed-bar completed-bar" id="progress" data-complete="80">
+                    <hr class="completed-bar__dashed" >
+                    <i class="fas fa-truck-moving completed-bar__truck"></i>
+                  </div>
+                </div>
+                <div id="nexthere" style="margin: auto; text-align: center;">
+                    <button class="button btn bg-gradient-dark" style="color: #fff" disabled>Continue</button>
+                    <div  class="about">Upload to continue</div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      
+     <script src="../page/popper.min.js"></script>
+     <script src="../page/soft-design-system.js"></script>
+          <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-app-compat.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-analytics-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-storage-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-database-compat.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyByQIomnE5u66r4ic2uXCRgYYkNUwO-JIo",
+    authDomain: "campus-corner-954cd.firebaseapp.com",
+    databaseURL: "https://campus-corner-954cd-default-rtdb.firebaseio.com",
+    projectId: "campus-corner-954cd",
+    storageBucket: "campus-corner-954cd.appspot.com",
+    messagingSenderId: "536986235949",
+    appId: "1:536986235949:web:fc291bacb8889e4c70b4a4",
+    measurementId: "G-Z9LK9WB6PF"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  firebase.storage();
+</script>   
+<script src="completeProfile2.js"></script>
+    </body>
+
+
+</html>

@@ -1,0 +1,7 @@
+09:37:42.435 [NamespaceSystem-akka.actor.default-dispatcher-5] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+09:37:42.514 [main] INFO com.firebase.server.forge.App$ - Listening at localhost:9000
+18:03:09.814 [Thread-0] INFO com.firebase.server.forge.App$ - Attempting graceful shutdown.
+18:03:09.925 [NamespaceSystem-akka.actor.default-dispatcher-20] INFO com.firebase.core.namespace.Terminator$Terminator - 1 actors left to terminate: campus-corner-954cd-default-rtdb
+18:03:09.940 [NamespaceSystem-akka.actor.default-dispatcher-23] INFO com.firebase.core.namespace.NamespaceActor - Stopping namespace actor for campus-corner-954cd-default-rtdb
+18:03:09.943 [NamespaceSystem-akka.actor.default-dispatcher-23] INFO com.firebase.core.namespace.NamespaceActor - Gauges removed for campus-corner-954cd-default-rtdb
+18:03:09.950 [Thread-0] INFO com.firebase.server.forge.App$ - Graceful shutdown complete.

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+    <!-- Nucleo Icons -->
+    <link href="../assets/css/nucleo-icons.css" rel="stylesheet" />
+    <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+    <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
+    <!-- CSS Files -->
+    <link id="pagestyle" href="../assets/css/soft-ui-dashboard.css?v=1.0.3" rel="stylesheet" />
+</head>
+<body>
+    <!-- -------- START HEADER 1 w/ text and image on right ------- -->
+<header>
+    <div class="page-header min-vh-100">
+      <div class="oblique position-absolute top-0 h-100 d-md-block d-none">
+        <div class="oblique-image bg-cover position-absolute fixed-top ms-auto h-100 z-index-0 ms-n6" style="background-image:url(../page/im.jpg)"></div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-7 d-flex justify-content-center flex-column">
+            <h1 class="text-gradient text-info">Get Started With</h1>
+            <h1 class="mb-4">Campus Corner</h1>
+            <p class="lead pe-5 me-5">Just a few more steps away. Lorem ipsum dolor sit amet, consectetur adipiscing  </p>
+            <div class="buttons">
+              <button type="button" id="start" onclick="startt()" class="btn bg-gradient-info mt-4">Get Started</button>
+              <button type="button" class="btn text-info shadow-none mt-4">Read more</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- -------- END HEADER 1 w/ text and image on right ------- -->
+  <script src="../assets/js/soft-ui-dashboard.min.js?v=1.0.3"></script>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-app-compat.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-analytics-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-storage-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-database-compat.js"></script>
+  <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+      apiKey: "AIzaSyByQIomnE5u66r4ic2uXCRgYYkNUwO-JIo",
+      authDomain: "campus-corner-954cd.firebaseapp.com",
+      databaseURL: "https://campus-corner-954cd-default-rtdb.firebaseio.com",
+      projectId: "campus-corner-954cd",
+      storageBucket: "campus-corner-954cd.appspot.com",
+      messagingSenderId: "536986235949",
+      appId: "1:536986235949:web:fc291bacb8889e4c70b4a4",
+      measurementId: "G-Z9LK9WB6PF"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+    firebase.storage();
+  </script>   
+<script src="start.js"></script> 
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+<link rel="stylesheet" href="completeProfile1.css">
+
+</head>
+<body>
+    <div >
+        <div class="card bg-secondary shadow">
+          <div class="card-header bg-white border-0">
+            <div class="row align-items-center">
+              <div class="col-8">
+                <h3 class="mb-0">Campus Profile</h3>
+              </div>
+              
+            </div>
+          </div>
+          <div class="card-body">
+            <form onsubmit="return false">
+              <h6 class="heading-small text-muted mb-4"> information</h6>
+              <div class="pl-lg-4">
+                
+                  <div >
+                    <div class="form-group focused">
+                      <label class="form-control-label" for="input-username">Campus Name</label>
+                      <input type="text" id="input-name" class="form-control form-control-alternative" placeholder="Campus Name" required >
+                    </div>
+                  </div>
+                  <div >
+                    <div class="form-group">
+                      <label class="form-control-label" for="input-email">Email address</label>
+                      <input type="email" id="input-email" class="form-control form-control-alternative" placeholder="abc@example.com" required>
+                    </div>
+                  </div>
+                
+               
+              </div>
+              <hr class="my-4">
+              <!-- Address -->
+              <h6 class="heading-small text-muted mb-4">Contact information</h6>
+              <div class="pl-lg-4">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group focused">
+                      <label class="form-control-label" for="input-address">Address</label>
+                      <input id="input-address" class="form-control form-control-alternative" placeholder="Address"  type="text" required>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div class="form-group focused">
+                      <label class="form-control-label" for="input-city">City</label>
+                      <input type="text" id="input-city" class="form-control form-control-alternative" placeholder="City" required>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-group focused">
+                      <label class="form-control-label" for="input-country">State</label>
+                      <input type="text" id="input-state" class="form-control form-control-alternative" placeholder="State" required>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <label class="form-control-label" for="input-country">Postal code</label>
+                      <input type="number" id="input-postal-code" class="form-control form-control-alternative" placeholder="Postal code" required>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr class="my-4">
+              <!-- Description -->
+              <h6 class="heading-small text-muted mb-4">About </h6>
+              <div class="pl-lg-4">
+                <div class="form-group focused">
+                  <label>About </label>
+                  <textarea rows="4" id="about" class="form-control form-control-alternative" placeholder="A few words about your campus ..." required></textarea>
+                </div>
+              </div>
+              <div class=" text-center" style="margin-bottom: 20px;">
+                <button type="submit" onclick="details()" class="btn bg-gradient-dark  " style="color: #fff;">Continue</button>
+
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-app-compat.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-analytics-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-storage-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-database-compat.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyByQIomnE5u66r4ic2uXCRgYYkNUwO-JIo",
+    authDomain: "campus-corner-954cd.firebaseapp.com",
+    databaseURL: "https://campus-corner-954cd-default-rtdb.firebaseio.com",
+    projectId: "campus-corner-954cd",
+    storageBucket: "campus-corner-954cd.appspot.com",
+    messagingSenderId: "536986235949",
+    appId: "1:536986235949:web:fc291bacb8889e4c70b4a4",
+    measurementId: "G-Z9LK9WB6PF"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  firebase.storage();
+</script>   
+<script src="complete.js"></script> 
+
+
+</body>
+</html>
